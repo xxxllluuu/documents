@@ -1,0 +1,1051 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Upgrade Server (upgrade_server) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="profile-and-notification-and-heartbeat-server.html" />
+    
+    
+    <link rel="prev" href="hm_apmserver.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    UAV.Monitor+APM Installation and Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../quickstart.html">
+            
+                <a href="../../../quickstart.html">
+            
+                    
+                    Demo Version Deployment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../quick_install_windows.html">
+            
+                <a href="../../../quick_install_windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../quick_install_linux.html">
+            
+                <a href="../../../quick_install_linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../quick_install_mac.html">
+            
+                <a href="../../../quick_install_mac.html">
+            
+                    
+                    Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../uavserviceDeploy.html">
+            
+                <a href="../../../uavserviceDeploy.html">
+            
+                    
+                    Core Service Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../thirdparty.html">
+            
+                <a href="../../../thirdparty.html">
+            
+                    
+                    1. Third-party Service Preparation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../../thirdparty/rocketmq.html">
+            
+                <a href="../../../thirdparty/rocketmq.html">
+            
+                    
+                    1.1 RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../../thirdparty/opentsdb.html">
+            
+                <a href="../../../thirdparty/opentsdb.html">
+            
+                    
+                    1.2 OpenTSDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../../thirdparty/mongodb.html">
+            
+                <a href="../../../thirdparty/mongodb.html">
+            
+                    
+                    1.3 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../../thirdparty/redis.html">
+            
+                <a href="../../../thirdparty/redis.html">
+            
+                    
+                    1.4 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../../thirdparty/elasticsearch.html">
+            
+                <a href="../../../thirdparty/elasticsearch.html">
+            
+                    
+                    1.5 ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../../thirdparty/ldap.html">
+            
+                <a href="../../../thirdparty/ldap.html">
+            
+                    
+                    1.6 LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../../thirdparty/grafana.html">
+            
+                <a href="../../../thirdparty/grafana.html">
+            
+                    
+                    1.7 Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../healmanagerInstall.html">
+            
+                <a href="../../healmanagerInstall.html">
+            
+                    
+                        2. Health Manager Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../healmanagerInstall.html">
+            
+                <a href="../../healmanagerInstall.html">
+            
+                    
+                    2.1 Intallation and Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../standalone.html">
+            
+                <a href="../standalone.html">
+            
+                    
+                    2.1.1 AllInOne Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../microservice.html">
+            
+                <a href="../microservice.html">
+            
+                    
+                    2.1.2 Distributed Deployment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="hm-hbserver.html">
+            
+                <a href="hm-hbserver.html">
+            
+                    
+                    Heartbeat Server (hm_hbserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.2" data-path="hm_moserver.html">
+            
+                <a href="hm_moserver.html">
+            
+                    
+                    Monitoring Server (hm_moserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.3" data-path="hm_pfntfyserver.html">
+            
+                <a href="hm_pfntfyserver.html">
+            
+                    
+                    Profile and Notification Server (hm_pfntfyserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4" data-path="hm_apphubmgr.html">
+            
+                <a href="hm_apphubmgr.html">
+            
+                    
+                    AppHub Manager (hm_apphubmgr)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.5" data-path="hm_rtserver.html">
+            
+                <a href="hm_rtserver.html">
+            
+                    
+                    Runtime Notification Server (hm_rtserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.6" data-path="ri-zhi-fu-52a128-hm-logserver.html">
+            
+                <a href="ri-zhi-fu-52a128-hm-logserver.html">
+            
+                    
+                    Log Server (hm_logserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.7" data-path="hm_nodeserver.html">
+            
+                <a href="hm_nodeserver.html">
+            
+                    
+                    Node Server (hm_nodeserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.8" data-path="hm_apmserver.html">
+            
+                <a href="hm_apmserver.html">
+            
+                    
+                    APM Server (hm_apmserver)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.2.9" data-path="upgrade-server.html">
+            
+                <a href="upgrade-server.html">
+            
+                    
+                    Upgrade Server (upgrade_server)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.10" data-path="profile-and-notification-and-heartbeat-server.html">
+            
+                <a href="profile-and-notification-and-heartbeat-server.html">
+            
+                    
+                    Profile, Notification and Heartbeat Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../hm_start&stop.html">
+            
+                <a href="../../hm_start&stop.html">
+            
+                    
+                    2.2 Start and Stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../issues.html">
+            
+                <a href="../../issues.html">
+            
+                    
+                    2.3 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../../apphub_Install/apphub_Install.html">
+            
+                <a href="../../../apphub_Install/apphub_Install.html">
+            
+                    
+                    3. AppHub Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../../apphub_Install/apphub_Install.html">
+            
+                <a href="../../../apphub_Install/apphub_Install.html">
+            
+                    
+                    3.1 Installation and Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../../apphub_Install/apphub_Install.html">
+            
+                <a href="../../../apphub_Install/apphub_Install.html">
+            
+                    
+                    3.2 Start and Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../../apphub_Install/issues.html">
+            
+                <a href="../../../apphub_Install/issues.html">
+            
+                    
+                    3.3 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../Agent.html">
+            
+                <a href="../../../Agent.html">
+            
+                    
+                    Client Probe Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../uavagentInstall/ma_install.html">
+            
+                <a href="../../../uavagentInstall/ma_install.html">
+            
+                    
+                    1. Monitor Agent Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../../uavagentInstall/ma_install.html">
+            
+                <a href="../../../uavagentInstall/ma_install.html">
+            
+                    
+                    1.1 Installation and Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../../uavagentInstall/ma_start_stop.html">
+            
+                <a href="../../../uavagentInstall/ma_start_stop.html">
+            
+                    
+                    1.2 Start and Stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../../uavagentInstall/issues.html">
+            
+                <a href="../../../uavagentInstall/issues.html">
+            
+                    
+                    1.3 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../../mof_install/mof_install.html">
+            
+                <a href="../../../mof_install/mof_install.html">
+            
+                    
+                    2. Monitor Framework Access
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../../mof_install/mof_install.html">
+            
+                <a href="../../../mof_install/mof_install.html">
+            
+                    
+                    2.1 Installation and Uninstallation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../../mof_install/example.html">
+            
+                <a href="../../../mof_install/example.html">
+            
+                    
+                    2.2 MOF Access Instance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../../mof_install/issues.html">
+            
+                <a href="../../../mof_install/issues.html">
+            
+                    
+                    2.3 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../../docker/uavagent.html">
+            
+                <a href="../../../docker/uavagent.html">
+            
+                    
+                    3. Docker Deployment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../../docker/uavagent.html">
+            
+                <a href="../../../docker/uavagent.html">
+            
+                    
+                    3.1 MA Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../../docker/mof.html">
+            
+                <a href="../../../docker/mof.html">
+            
+                    
+                    3.2 MOF Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../../../docker/33-chang-jian-wen-ti.html">
+            
+                <a href="../../../docker/33-chang-jian-wen-ti.html">
+            
+                    
+                    3.3 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../upgrade.html">
+            
+                <a href="../../../upgrade.html">
+            
+                    
+                    Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../hm_configration.html">
+            
+                <a href="../../hm_configration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../hm_configration.html">
+            
+                <a href="../../hm_configration.html">
+            
+                    
+                    1. HM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../apphub_Install/apphub_configuration.html">
+            
+                <a href="../../../apphub_Install/apphub_configuration.html">
+            
+                    
+                    2. AppHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../uavagentInstall/ma_configuration.html">
+            
+                <a href="../../../uavagentInstall/ma_configuration.html">
+            
+                    
+                    3. MA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../mof_install/mof_configuration.html">
+            
+                <a href="../../../mof_install/mof_configuration.html">
+            
+                    
+                    4. MOF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../chang-jian-wen-ti.html">
+            
+                <a href="../../../chang-jian-wen-ti.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Upgrade Server (upgrade_server)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="upgrade-server">Upgrade Server</h1>
+<p>Configuration file upgrade_pro(test)_server.properties</p>
+<h2 id="log-configuration">Log Configuration</h2>
+<h5 id="logleveldebug">log.level=DEBUG</h5>
+<p>INFO, ERR, WARNING, DEBUG, FINE, FINER and ALL</p>
+<h5 id="logdebugtrue">log.debug=true</h5>
+<p>Enable debug logging or not</p>
+<h5 id="logfsize10">log.fsize=10</h5>
+<p>Size of single output block of logs</p>
+<h5 id="metadatacenterid1">meta.datacenterid=1</h5>
+<p>Configure data center ID</p>
+<h5 id="metanodetypeu5347u7ea7u4e2du5fc3">meta.nodetype=\u5347\u7ea7\u4e2d\u5fc3</h5>
+<p>Node name and UTF8 code</p>
+<h1 id="heartbeat-client-feature">Heartbeat Client Feature</h1>
+<h5 id="featurehbclientagentloadercomcrediteaseuavagentheartbeatjar">feature.hbclientagent.loader=com.creditease.uav.agent.heartbeat.jar</h5>
+<p>Main jar of the heartbeat client feature for classloader isolation</p>
+<h5 id="featurehbclientagentenabletrue">feature.hbclientagent.enable=true</h5>
+<p>Enable the heartbeat client feature</p>
+<h5 id="featurehbclientagentcomponentscomcrediteaseagentfeatureheartbeatclientagent">feature.hbclientagent.components=com.creditease.agent.feature.HeartBeatClientAgent</h5>
+<p>Main class of the heartbeat client feature</p>
+<h5 id="featurehbclientagentproperties">feature.hbclientagent.properties=</h5>
+<p>Property configuration, for example: key1=value1,key2=value2,...</p>
+<h5 id="featurehbclientagenthbhandlerscomcrediteaseagentfeaturehbagenthandlershbclientdefaulthandler">feature.hbclientagent.hbhandlers=com.creditease.agent.feature.hbagent.handlers.HBClientDefaultHandler</h5>
+<p>Handler class of heartbeat delivery</p>
+<h5 id="featurehbclientagenthbservers1270018010">feature.hbclientagent.hbservers=127.0.0.1:8010</h5>
+<p>Heartbeat server address</p>
+<h5 id="featurehbclientagentinterval15000">feature.hbclientagent.interval=15000</h5>
+<p>Heartbeat delivery interval, in ms</p>
+<h3 id="node-control-feature">Node Control Feature</h3>
+<h5 id="featurenodeoperagentloadercomcrediteaseuavagentheartbeatjar">feature.nodeoperagent.loader=com.creditease.uav.agent.heartbeat.jar</h5>
+<p>Main jar of the node control feature for classloader isolation</p>
+<h5 id="featurenodeoperagentenabletrue">feature.nodeoperagent.enable=true</h5>
+<p>Enable the node control feature</p>
+<h5 id="featurenodeoperagentcomponentscomcrediteaseagentfeaturenodeoperagent">feature.nodeoperagent.components=com.creditease.agent.feature.NodeOperAgent</h5>
+<p>Main class of the node control feature</p>
+<h5 id="featurenodeoperagenthttpport10500">feature.nodeoperagent.http.port=10500</h5>
+<p>Port of node control server</p>
+<h3 id="upgrade-server-configuration">Upgrade Server Configuration</h3>
+<h5 id="featureupgradeserverloaderdefault">feature.upgradeserver.loader=default</h5>
+<p>Load the node control feature with the default class loader</p>
+<h5 id="featureupgradeserverenabletrue">feature.upgradeserver.enable=true</h5>
+<p>Enable the upgrade server or not</p>
+<h5 id="featureupgradeservercomponentscomcrediteaseuavfeatureupgradedownloadupgradedownloadserver">feature.upgradeserver.components=com.creditease.uav.feature.upgrade.download.UpgradeDownloadServer</h5>
+<p>Main class of the upgrade server feature</p>
+<h5 id="featureupgradeserverdrhandlerscomcrediteaseuavfeatureupgradedownloadupgradedownloadrequesthandler">feature.upgradeserver.drhandlers=com.creditease.uav.feature.upgrade.download.UpgradeDownloadRequestHandler</h5>
+<p>Handler class of upgraded download requests of the upgrade server feature</p>
+<h5 id="&#x5347;&#x7EA7;&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x7AEF;&#x53E3;">feature.upgradeserver.http.port=8888</h5>
+<p>Port of the upgrade server</p>
+<h5 id="featureupgradeserverhttpbacklog10">feature.upgradeserver.http.backlog=10</h5>
+<p>Length of the Http connection queue of the upgrade server</p>
+<h5 id="featureupgradeserverhttpbossgroupsize2">feature.upgradeserver.http.bossgroup.size=2</h5>
+<p>Thread count received by Http of the upgrade server</p>
+<h5 id="featureupgradeserverhttpwokergroupsize10">feature.upgradeserver.http.wokergroup.size=10</h5>
+<p>Thread count handled by Http of the upgrade server</p>
+<h5 id="featureupgradeserverdownloaddirdpackages">feature.upgradeserver.download.dir=D:/packages</h5>
+<p>Directory of the installation package of the upgrade server</p>
+<h5 id="featureupgradeserverdownloadthreshold10">feature.upgradeserver.download.threshold=10</h5>
+<p>Maximum simultaneous downloads</p>
+<h3 id="work-queue-configuration-of-the-upgrade-server">Work queue configuration of the upgrade server</h3>
+<h5 id="featureupgradeserver1nqworkercoresize10">feature.upgradeserver.1nqworker.coresize=10</h5>
+<p>1:N core worker queue count of the upgrade server</p>
+<h5 id="featureupgradeserver1nqworkermaxsize10">feature.upgradeserver.1nqworker.maxsize=10</h5>
+<p>1:N maximum worker queue count of the upgrade server</p>
+<h5 id="featureupgradeserver1nqworkerbqsize1">feature.upgradeserver.1nqworker.bqsize=1</h5>
+<p>Length of 1:N worker queue of the upgrade server</p>
+<h5 id="featureupgradeserver1nqworkerkeepalivetimeout60000">feature.upgradeserver.1nqworker.keepalivetimeout=60000</h5>
+<p>Survival period of 1:N worker queue of the upgrade server</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hm_apmserver.html" class="navigation navigation-prev " aria-label="Previous page: APM Server (hm_apmserver)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="profile-and-notification-and-heartbeat-server.html" class="navigation navigation-next " aria-label="Next page: Profile, Notification and Heartbeat Server">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Upgrade Server (upgrade_server)","level":"1.3.3.2.9","depth":4,"next":{"title":"Profile, Notification and Heartbeat Server","level":"1.3.3.2.10","depth":4,"path":"healmanagerInstall/healmanagerInstall/microservice/profile-and-notification-and-heartbeat-server.md","ref":"healmanagerInstall/healmanagerInstall/microservice/profile-and-notification-and-heartbeat-server.md","articles":[]},"previous":{"title":"APM Server (hm_apmserver)","level":"1.3.3.2.8","depth":4,"path":"healmanagerInstall/healmanagerInstall/microservice/hm_apmserver.md","ref":"healmanagerInstall/healmanagerInstall/microservice/hm_apmserver.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"healmanagerInstall/healmanagerInstall/microservice/upgrade-server.md","mtime":"2018-06-27T08:33:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-02T03:08:07.805Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
